@@ -21,3 +21,11 @@ The __DIA Benchmark Dataset__ is a benchmarking tool consisting of 150 dynamic q
 The dataset was created manually by experts and the outputs validated for numberous generated instances of the questions. The following figure illustrates the generation process.
 
 ![architecture](https://github.com/user-attachments/assets/306f6f73-0a70-4a86-a5a8-668d932340a1)
+
+## Evaluation
+
+We tested 7 state-of-the-art LLM models on the DIA dataset through API calls, and ChatGPT-4o manually through its chat interface. Please note that these were tested on the `k=5` dataset and in October 2024.
+
+<div align="center">
+    <img alt="evaluation" src="https://github.com/user-attachments/assets/be7e9a08-1c21-45bf-98de-6bd7968451dc">
+</div>
