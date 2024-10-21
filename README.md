@@ -29,3 +29,31 @@ We tested 7 state-of-the-art LLM models on the DIA dataset through API calls, an
 <div align="center">
     <img alt="evaluation" src="https://github.com/user-attachments/assets/be7e9a08-1c21-45bf-98de-6bd7968451dc">
 </div>
+
+## Testing
+
+### 1. Download the repository
+
+Via git
+```bash
+git clone https://github.com/DIA-Bench/DIA-Bench.git
+```
+
+Or by downloading a zipped version from __Code__ > __Download ZIP__
+
+### 2. Configure up LLM provider
+
+Choose a provider for testing the LLMs. Since most models are either large, or unavailable to download it's unlikely that you would be able to run it locally on your machine.
+
+For testing GPT models we recommend https://openai.com/api/. For other models we used https://openrouter.ai/.
+
+You will need to register, purchase credits and fill the necessary fields in the [DIA_bench_evalutor.py](DIA_bench_evalutor.py) script, including the tested model.
+
+### 3. Run the benchmark
+
+Run the benchmark and wait for the results. Please note that it may take a long time to run all tests.
+```bash
+python DIA_bench_evalutor.py
+```
+
+Your final oputput will contain the statistics for the model, including the Reliability Score (RS), the Confidence Index (CI), the number of correct answers, the number of skipped answers and the number of incorrect answers.
