@@ -1,7 +1,5 @@
 ################### DIA-bench v1.0 evalutor script ###################################
 # Title: Dynamic Intelligence Assessment:Benchmarking LLMs on the Road to AGI with a Focus on Model Confidence
-# Authors: Norbert Tihanyi, Tamas Bisztray, Richard A. Dubniczky, Bilel Cherif, Mohamed Amine Ferrag, 
-# Authors (continue): Rebeka Toth, Lajos Muzsai, Bertalan Borsos, Ridhi Jain, Ryan Marinelli, Lucas C. Cordeiro, Merouane Debbah
 # Script: This script serves as an example of how to evaluate the an LLM model using the DIA-bench dataset (evaluator script).
 # The script can connect to any OpenAI compatible API. Please note that you may incur charges by using this and may be subject to throttling.
 
