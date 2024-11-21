@@ -10,11 +10,15 @@ The __DIA Benchmark Dataset__ is a benchmarking tool consisting of 150 dynamic q
 
 |File|K|Tests|
 |-|-|-|
-|[DIA-bench-1.json](./DIA-bench-1.json)|1|150|
-|[DIA-bench-5.json](./DIA-bench-5.json)|5|750|
-|[DIA-bench-10.json](./DIA-bench-10.json)|10|1,500|
-|[DIA-bench-20.json](./DIA-bench-20.json)|20|3,000|
-|[DIA-bench-100.json](./DIA-bench-100.json)|100|15,000|
+|[DIA-Benchmark-k1.json](./DIA-Benchmark-k1.json)|1|150|
+|[DIA-Benchmark-k5.json](./DIA-Benchmark-k5.json)|5|750|
+|[DIA-Benchmark-k10.json](./DIA-Benchmark-k10.json)|10|1,500|
+|[DIA-Benchmark-k100.json](./DIA-Benchmark-k100.json)|100|15,000|
+
+## About
+
+- __Authors__: Norbert Tihanyi, Tamas Bisztray, Richard A. Dubniczky, Rebeka Toth, Bertalan Borsos, Bilel Cherif, Ridhi Jain, Lajos Muzsai, Mohamed Amine Ferrag, Ryan Marinelli, Lucas C. Cordeiro, Merouane Debbah, Vasileios Mavroeidis, and Audun Josang
+- __Hugging Face__: https://huggingface.co/datasets/dia-bench/DIA-Bench
 
 ## Architecture
 
@@ -30,7 +34,7 @@ We tested 25 state-of-the-art LLM models on the DIA dataset through API calls, a
     <img alt="evaluation" src="https://github.com/user-attachments/assets/585ef918-b091-4795-b698-c9b5a4308db3">
 </div>
 
-## Testing
+## Evaluation
 
 ### 1. Download the repository
 
@@ -47,13 +51,23 @@ Choose a provider for testing the LLMs. Since most models are either large, or u
 
 For testing GPT models we recommend https://openai.com/api/. For other models we used https://openrouter.ai/.
 
-You will need to register, purchase credits and fill the necessary fields in the [DIA_bench_evalutor.py](DIA_bench_evalutor.py) script, including the tested model.
+You will need to register, purchase credits and fill the necessary fields in the [DIA_benchmark_evalutor.py](DIA_benchmark_evalutor.py) script, including the tested model.
 
 ### 3. Run the benchmark
 
 Run the benchmark and wait for the results. Please note that it may take a long time to run all tests.
 ```bash
-python DIA_bench_evalutor.py
+python DIA_benchmark_evalutor.py
 ```
 
 Your final oputput will contain the statistics for the model, including the Reliability Score (RS), the Confidence Index (CI), the number of correct answers, the number of skipped answers and the number of incorrect answers.
+
+## Generation
+
+### 1. Set up environment
+
+Open the [DIA_benchmark_generator.ipynb](DIA_benchmark_generator.ipynb) file using the tool of your choice (Google Colab, Jupyter server, Jupyer VSC extension, etc...). We used Google Colab for generation.
+
+### 2. Generate the code
+
+At the bottom of the last code block, set the `k` value to whatever your desired instance count is for each test template, and run the code blocks one by one. At the end, a `DIA-bench.json` file will be created, which contains your dataset.

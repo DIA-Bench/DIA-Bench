@@ -81,7 +81,7 @@ class LLMChallengeEvaluator:
         wrong_count = 0
         confidence_index = 0
 
-        q_templates = {challenge['challenge']['Q template'] for challenge in data['questions']}
+        q_templates = {challenge['challenge']['template_id'] for challenge in data['questions']}
 
         # Progress bar without time display, dynamic updates to the bar
         progress_bar = tqdm(sorted(q_templates), desc="Reliability Score: 0", unit="template", leave=False, bar_format='{l_bar}{bar}| {n_fmt}/{total_fmt}')
@@ -94,7 +94,7 @@ class LLMChallengeEvaluator:
             start_time = time.time()
 
             # Process each instance for the current Q template
-            for challenge in [c for c in data['questions'] if c['challenge']['Q template'] == q_template]:
+            for challenge in [c for c in data['questions'] if c['challenge']['template_id'] == q_template]:
                 instance = challenge['challenge']['instance']
                 description = challenge['challenge']['description']
                 instructions = challenge['challenge']['instructions']
@@ -121,7 +121,7 @@ class LLMChallengeEvaluator:
 
                 # Store the log data
                 log_data.append({
-                    "Q template": q_template,
+                    "template_id": q_template,
                     "instance": instance,
                     "llm_response": llm_response,
                     "expected_solution": correct_solution,
