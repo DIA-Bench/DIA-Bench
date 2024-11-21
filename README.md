@@ -24,10 +24,10 @@ The dataset was created manually by experts and the outputs validated for number
 
 ## Evaluation
 
-We tested 7 state-of-the-art LLM models on the DIA dataset through API calls, and ChatGPT-4o manually through its chat interface. Please note that these were tested on the `k=5` dataset and in October 2024.
+We tested 25 state-of-the-art LLM models on the DIA dataset through API calls, and ChatGPT-4o manually through its chat interface. Please note that these were tested on the `k=5` dataset and in November 2024.
 
 <div align="center">
-    <img alt="evaluation" src="https://github.com/user-attachments/assets/be7e9a08-1c21-45bf-98de-6bd7968451dc">
+    <img alt="evaluation" src="https://github.com/user-attachments/assets/585ef918-b091-4795-b698-c9b5a4308db3">
 </div>
 
 ## Testing
