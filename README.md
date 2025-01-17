@@ -71,3 +71,16 @@ Open the [DIA_benchmark_generator.ipynb](DIA_benchmark_generator.ipynb) file usi
 ### 2. Generate the code
 
 At the bottom of the last code block, set the `k` value to whatever your desired instance count is for each test template, and run the code blocks one by one. At the end, a `DIA-bench.json` file will be created, which contains your dataset.
+
+## Cite This Paper
+
+```bibtex
+@INPROCEEDINGS{10825051,
+  author={Tihanyi, Norbert and Bisztray, Tamas and Dubniczky, Richard A. and Toth, Rebeka and Borsos, Bertalan and Cherif, Bilel and Jain, Ridhi and Muzsai, Lajos and Ferrag, Mohamed Amine and Marinelli, Ryan and Cordeiro, Lucas C. and Debbah, Merouane and Mavroeidis, Vasileios and Jøsang, Audun},
+  booktitle={2024 IEEE International Conference on Big Data (BigData)}, 
+  title={Dynamic Intelligence Assessment: Benchmarking LLMs on the Road to AGI with a Focus on Model Confidence}, 
+  year={2024},
+  pages={3313-3321},
+  keywords={Measurement;Adaptation models;Computational modeling;Benchmark testing;Reliability engineering;Mathematical models;Data models;Reliability;Problem-solving;Computer security;Artificial Intelligence;Large Language Models;Dynamic Benchmarking;Performance Metrics;Reliability},
+  doi={10.1109/BigData62323.2024.10825051}}
+```
