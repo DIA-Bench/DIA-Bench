@@ -75,7 +75,7 @@ At the bottom of the last code block, set the `k` value to whatever your desired
 ## Cite This Paper
 
 ```bibtex
-@INPROCEEDINGS{10825051,
+@INPROCEEDINGS{diabench,
   author={Tihanyi, Norbert and Bisztray, Tamas and Dubniczky, Richard A. and Toth, Rebeka and Borsos, Bertalan and Cherif, Bilel and Jain, Ridhi and Muzsai, Lajos and Ferrag, Mohamed Amine and Marinelli, Ryan and Cordeiro, Lucas C. and Debbah, Merouane and Mavroeidis, Vasileios and Jøsang, Audun},
   booktitle={2024 IEEE International Conference on Big Data (BigData)}, 
   title={Dynamic Intelligence Assessment: Benchmarking LLMs on the Road to AGI with a Focus on Model Confidence}, 
